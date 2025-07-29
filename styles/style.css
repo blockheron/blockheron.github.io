@@ -1,0 +1,23 @@
+.sidebar-menu {
+    --bs-bg-opacity: 1;
+    background-color: ghostwhite;
+}
+
+.sidebar-menu-text {
+    --bs-bg-opacity: 1;
+    background-color: whitesmoke;
+}
+
+.menu-tab {
+    clip-path: polygon(0 5%, 70% 5%, 90% 15%, 90% 85%, 70% 95%, 0 95%, 0% 80%, 0% 20%);
+}
+
+.tab-a {
+  --bs-bg-opacity: 1;
+  background-color: cadetblue;
+}
+
+.tab-b {
+  --bs-bg-opacity: 1;
+  background-color: burlywood;
+}
