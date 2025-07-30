@@ -1,11 +1,12 @@
-.sidebar-menu {
+.content {
     --bs-bg-opacity: 1;
-    background-color: ghostwhite;
+    /* background-color: whitesmoke; */
+    background-color: darkslategrey;
 }
 
 .sidebar-menu-text {
     --bs-bg-opacity: 1;
-    background-color: whitesmoke;
+    background-color: antiquewhite;
 }
 
 .menu-tab {
@@ -20,4 +21,15 @@
 .tab-b {
   --bs-bg-opacity: 1;
   background-color: burlywood;
+}
+
+.link-icon {
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.profile-picture {
+  clip-path: circle(50% at 50% 50%);
+  width: 8em;
+  height: 8em;
 }
