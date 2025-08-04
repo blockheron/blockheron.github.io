@@ -42,6 +42,20 @@
   z-index: 1030;
 }
 
+.sidebar-link {
+  color: whitesmoke;
+  position: relative;
+  left: -2px;
+}
+
+.sidebar-link:hover {
+  color: #ffd249;
+}
+
+.sidebar-link:active {
+  color: #dfa700;
+}
+
 .root {
   padding: 3rem;
   margin-left: 270px;
@@ -58,7 +72,7 @@
   }
 
   .root {
-    padding: 1rem;
+    padding: 0.5rem;
     margin-left: 0;
   }
 }
