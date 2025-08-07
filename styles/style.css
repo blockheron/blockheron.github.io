@@ -1,16 +1,15 @@
 .content {
-    --bs-bg-opacity: 1;
-    /* background-color: whitesmoke; */
-    background-color: darkslategrey;
+  --bs-bg-opacity: 1;
+  background-color: darkslategrey;
 }
 
 .sidebar-menu-text {
-    --bs-bg-opacity: 1;
-    background-color: antiquewhite;
+  --bs-bg-opacity: 1;
+  background-color: antiquewhite;
 }
 
 .menu-tab {
-    clip-path: polygon(0 5%, 70% 5%, 90% 15%, 90% 85%, 70% 95%, 0 95%, 0% 80%, 0% 20%);
+  clip-path: polygon(0 5%, 70% 5%, 90% 15%, 90% 85%, 70% 95%, 0 95%, 0% 80%, 0% 20%);
 }
 
 .tab-a {
@@ -59,6 +58,19 @@
 .root {
   padding: 3rem;
   margin-left: 270px;
+}
+
+.experience-text {
+  background-color: #fffbed;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.experience-text p {
+  margin: 0px;
 }
 
 /* mobile mode */
