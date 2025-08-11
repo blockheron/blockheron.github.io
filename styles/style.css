@@ -4,7 +4,7 @@
 }
 
 .sidebar-menu {
-  max-width: 40%;
+  max-width: 24%;
 }
 
 .sidebar-menu-text {
@@ -48,7 +48,7 @@
 .sidebar-link {
   color: whitesmoke;
   position: relative;
-  left: -2px;
+  left: -3px;
 }
 
 .sidebar-link:hover {
@@ -75,6 +75,15 @@
 
 .experience-text p {
   margin: 0px;
+  color: black;
+}
+
+.experience-text h2 {
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
 }
 
 /* mobile mode */
