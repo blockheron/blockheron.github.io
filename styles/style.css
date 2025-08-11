@@ -3,6 +3,10 @@
   background-color: darkslategrey;
 }
 
+.sidebar-menu {
+  max-width: 40%;
+}
+
 .sidebar-menu-text {
   --bs-bg-opacity: 1;
   background-color: antiquewhite;
@@ -87,6 +91,10 @@
     padding: 0.5rem;
     margin-left: 0;
   }
+
+  .sidebar-menu {
+    max-width: 100%;
+  }
 }
 
 /* modal stuff */
@@ -102,8 +110,8 @@
 [id^=modal] {
     display: none;
     position: fixed;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
 }
 [id^=modal]:target {
     display: block;
