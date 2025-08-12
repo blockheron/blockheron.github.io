@@ -64,22 +64,19 @@
 }
 
 .experience-text {
-  background-color: #fffbed;
+  /* background-color: #fffbed; */
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 25px;
-  margin-bottom: 10px;
 }
 
 .experience-text p {
   margin: 0px;
-  color: black;
 }
 
 a:link {
   text-decoration: none;
-  color: black;
 }
 
 a:hover {
