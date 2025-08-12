@@ -53,13 +53,9 @@
 }
 
 .sidebar-link {
-  /* color: whitesmoke; */
+  color: whitesmoke;
   position: relative;
   left: -3px;
-}
-
-.sidebar-link a {
-  color: whitesmoke;
 }
 
 .root {
