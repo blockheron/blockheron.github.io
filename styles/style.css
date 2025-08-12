@@ -31,6 +31,13 @@
   height: 1.2em;
 }
 
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
 .profile-picture {
   clip-path: circle(50% at 50% 50%);
   width: 8em;
@@ -49,14 +56,6 @@
   color: whitesmoke;
   position: relative;
   left: -3px;
-}
-
-.sidebar-link:hover {
-  color: #ffd249;
-}
-
-.sidebar-link:active {
-  color: #dfa700;
 }
 
 .root {
@@ -78,12 +77,102 @@
   color: black;
 }
 
-.experience-text h2 {
+a:link {
+  text-decoration: none;
   color: black;
 }
 
-a:link {
-  text-decoration: none;
+a:hover {
+  color: #ffd249;
+}
+
+a:active {
+  color: #dfa700;
+}
+
+/* modal/popup stuff */
+[id^=modal] {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+[id^=modal]:target {
+  display: block;
+}
+
+input[type=checkbox] {
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+}
+
+.popup-overlay {
+  position: fixed;
+  z-index: 1;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000b3;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
+}
+
+.popup-wrapper {
+  position: fixed;
+  z-index: 9;
+  width: 60%;
+  max-height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 62px 32px 10px 32px;
+  clip-path: polygon(89% 8%, 93% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+  background: antiquewhite;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 0.2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup-wrapper h2 {
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 30px;
+  color: darkslategrey;
+  font-weight: 600;
+}
+
+.tagline {
+  text-align: center;
+  margin-bottom: 0px;
 }
 
 /* mobile mode */
@@ -104,60 +193,10 @@ a:link {
   .sidebar-menu {
     max-width: 100%;
   }
-}
 
-/* modal stuff */
-.button {
-    display: inline-block;
-    border: 1px solid;
-    border-color: #012766;
-    background: #012766;
-    padding: 10px 16px;
-    border-radius: 4px;
-    color: #ffffff;
-}
-[id^=modal] {
-    display: none;
-    position: fixed;
-    /* top: 0;
-    left: 0; */
-}
-[id^=modal]:target {
-    display: block;
-}
-input[type=checkbox] {
-    position: absolute;
-    clip: rect(0 0 0 0);
-}
-.popup {
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-}
-.popup__overlay {
-    position: fixed;
-    z-index: 1;
-    display: block;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #000000b3;
-}
-.popup__wrapper {
-    position: fixed;
-    z-index: 9;
-    width: 80%;
-    max-width: 1200px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 8px;
-    padding: 58px 32px 32px 32px;
-    background: #fff;
-}
-.popup__close {
-    position: absolute;
-    top: 16px;
-    right: 26px;
+  .popup-wrapper {
+    clip-path: polygon(80% 8%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
+    width: 90%;
+    height: 150vw;
+  }
 }
