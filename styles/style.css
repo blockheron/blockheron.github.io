@@ -53,9 +53,13 @@
 }
 
 .sidebar-link {
-  color: whitesmoke;
+  /* color: whitesmoke; */
   position: relative;
   left: -3px;
+}
+
+.sidebar-link a {
+  color: whitesmoke;
 }
 
 .root {
@@ -77,12 +81,9 @@
   color: black;
 }
 
-.experience-h2 {
-  color: black;
-}
-
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
