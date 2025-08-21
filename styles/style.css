@@ -279,10 +279,6 @@ input[type=checkbox] {
     height: 150vw;
   }
 
-  .slider-wrapper {
-    max-width: 100%;
-  }
-
   .slider img {
     object-fit: scale-down;
   }
