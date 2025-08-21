@@ -282,4 +282,8 @@ input[type=checkbox] {
   .slider-wrapper {
     max-width: 100%;
   }
+
+  .slider img {
+    object-fit: scale-down;
+  }
 }
