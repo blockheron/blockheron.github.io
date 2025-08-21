@@ -280,6 +280,6 @@ input[type=checkbox] {
   }
 
   .slider-wrapper {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
