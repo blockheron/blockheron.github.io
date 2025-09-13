@@ -55,15 +55,15 @@
 }
 
 .h1-custom {
-
+  font-size: 48px;
 }
 
 .h2-custom {
-  
+  font-size: 30px;
 }
 
 .home-pic {
-  height: 400px;
+  height: 420px;
 }
 
 .thumbnail {
